@@ -1,5 +1,7 @@
 # WSUS Offline Update
 
+docker run -d --name=wsusoffline -e SYSTEMS="all" -e OFFICE="all-ofc" -e SLEEP=1m -e LANGUAGE="chs" -e PARAMS="-includesp -includecpp -includedotnet -includewddefs -includemsse -includewddefs8" -e ISO=no -e DOWNLOADERS="aria2c wget" r0gger/docker-wsusoffline
+
 Using [WSUS Offline Update](http://wsusoffline.net/), you can update any computer running Microsoft Windows and Office safely, quickly and without an Internet connection (image also available @ [docker](https://hub.docker.com/r/r0gger/docker-wsusoffline/)).   
 
 <p align="center">
